@@ -1,0 +1,45 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  list-style-type: none;
+}
+
+.card {
+  font-family: sans-serif;
+  height: 300px;
+  width: 150px;
+  margin: 10px;
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  flex: 1;
+}
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  z-index: -1;
+}
+.overview {
+  display: none;
+}
+.card:hover .overview {
+  display: block;
+  background-color: #ffffff;
+  width: 100%;
+  height: 30%;
+  flex: 2;
+  overflow: auto;
+  visibility: visible;
+}
